@@ -24,8 +24,7 @@ body {
     font-family: 'Segoe UI', 'Roboto', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
-    /* place the background image on the page level so presenter overlay can be transparent */
-    background: url('../Image/Ảnh%20nền.jpg') center/cover fixed no-repeat;
+    background: #edf4fb;
 }
 
 /* ========== PRESENTATION SHELL ========== */
@@ -465,7 +464,7 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)), url('../Image/Ảnh%20nền.jpg') center/cover no-repeat;
+    background: url('../Image/Ảnh%20nền.jpg') center/cover no-repeat;
     background-size: cover;
     background-position: center center;
 }

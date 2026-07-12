@@ -1,75 +1,202 @@
 const slides = [
   {
-    title: '1. Giới thiệu, khái niệm CV, vai trò, cấu trúc CV',
+    title: 'Kỹ năng viết CV',
     tag: 'Slide 1',
     content: `
-      <div class="presenter-slide-content">
-        <h2>1. Giới thiệu, khái niệm CV, vai trò, cấu trúc CV</h2>
-        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; align-items: center; margin-top: 24px;">
-          <div style="background: #f7fbff; border: 1px solid #dcebf8; border-radius: 16px; padding: 20px;">
-            <p style="margin: 0 0 10px; font-size: 1rem; color: #4a5f7f;">CV là công cụ giúp bạn giới thiệu bản thân một cách chuyên nghiệp trước nhà tuyển dụng.</p>
-            <p style="margin: 0; font-size: 1rem; color: #4a5f7f;">Một CV tốt cần rõ mục tiêu, trình bày đẹp và phù hợp với vị trí ứng tuyển.</p>
+      <div class="presenter-slide-content" style="display: grid; gap: 22px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; color: #1f314a; font-weight: 700; font-size: 0.96rem;">
+          <div>Nhóm 6</div>
+          <div>Kỹ năng tạo lập văn bản</div>
+        </div>
+        <h1 style="margin: 0; font-size: clamp(3rem, 6vw, 5rem); line-height: 0.92; letter-spacing: -0.04em; text-align: center; color: #0b1221;">Kỹ năng viết CV</h1>
+        <div style="position: relative; display: grid; grid-template-columns: 1fr 0.95fr; gap: 24px; align-items: center; margin-top: 12px;">
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="Image/cv-hero.svg" alt="Hình minh họa CV" style="width: 100%; max-width: 620px; border-radius: 28px;" />
           </div>
-          <div style="display: flex; justify-content: center;">
-            <img src="Image/cv-hero.svg" alt="Hình minh họa CV" style="max-width: 100%; max-height: 280px;" />
+          <div style="position: relative; min-height: 240px; display: flex; align-items: flex-start; justify-content: center;">
+            <div style="position: absolute; top: 0; right: 0; width: 100%; max-width: 360px; padding: 24px 22px; background: #ffffff; border: 1px solid rgba(15, 23, 42, 0.08); border-radius: 24px; box-shadow: 0 24px 55px rgba(15, 23, 42, 0.09); color: #111827; line-height: 1.7;">
+              <p style="margin: 0 0 8px;">• Mục tiêu nghề nghiệp</p>
+              <p style="margin: 0 0 8px;">• Phần kinh nghiệm làm việc</p>
+              <p style="margin: 0 0 8px;">• Phần trình độ và bằng cấp trong CV</p>
+              <p style="margin: 0;">• Phần kỹ năng trong CV</p>
+            </div>
+            <div style="position: absolute; top: -14px; left: 20px; width: 120px; height: 22px; background: #111827; transform: rotate(-6deg); border-radius: 4px;"></div>
           </div>
         </div>
       </div>
     `
   },
   {
-    title: '2. Mục tiêu nghề nghiệp',
+    title: 'Nội dung trình bày',
     tag: 'Slide 2',
     content: `
       <div class="presenter-slide-content">
-        <h2>2. Mục tiêu nghề nghiệp </h2>
+        <h2>Nội dung trình bày</h2>
+        <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+          <div style="display: flex; gap: 16px; align-items: center; background: #f4f7fa; border: 1px solid #e4e9ef; border-radius: 18px; padding: 18px;">
+            <span style="width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: #ffd800; font-weight: 800; color: #1d3153;">1</span>
+            <span style="font-size: 1rem; color: #1f3552;">Khái niệm CV</span>
+          </div>
+          <div style="display: flex; gap: 16px; align-items: center; background: #f4f7fa; border: 1px solid #e4e9ef; border-radius: 18px; padding: 18px;">
+            <span style="width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: #ffd800; font-weight: 800; color: #1d3153;">2</span>
+            <span style="font-size: 1rem; color: #1f3552;">Mục tiêu nghề nghiệp</span>
+          </div>
+          <div style="display: flex; gap: 16px; align-items: center; background: #f4f7fa; border: 1px solid #e4e9ef; border-radius: 18px; padding: 18px;">
+            <span style="width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: #ffd800; font-weight: 800; color: #1d3153;">3</span>
+            <span style="font-size: 1rem; color: #1f3552;">Kinh nghiệm làm việc</span>
+          </div>
+          <div style="display: flex; gap: 16px; align-items: center; background: #f4f7fa; border: 1px solid #e4e9ef; border-radius: 18px; padding: 18px;">
+            <span style="width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: #ffd800; font-weight: 800; color: #1d3153;">4</span>
+            <span style="font-size: 1rem; color: #1f3552;">Trình độ học vấn, bằng cấp</span>
+          </div>
+          <div style="display: flex; gap: 16px; align-items: center; background: #f4f7fa; border: 1px solid #e4e9ef; border-radius: 18px; padding: 18px;">
+            <span style="width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: #ffd800; font-weight: 800; color: #1d3153;">5</span>
+            <span style="font-size: 1rem; color: #1f3552;">Kỹ năng</span>
+          </div>
+          <div style="display: flex; gap: 16px; align-items: center; background: #f4f7fa; border: 1px solid #e4e9ef; border-radius: 18px; padding: 18px;">
+            <span style="width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: #ffd800; font-weight: 800; color: #1d3153;">6</span>
+            <span style="font-size: 1rem; color: #1f3552;">Tổng kết & Ôn tập</span>
+          </div>
+        </div>
       </div>
     `
   },
   {
-    title: '3.1. Kinh nghiệm làm việc',
+    title: 'Khái niệm',
     tag: 'Slide 3',
     content: `
       <div class="presenter-slide-content">
-        <h2>3.1. Kinh nghiệm làm việc</h2>
-        <div style="margin-top: 20px; font-size: 0.95rem; line-height: 1.8; color: #213a55;">
-          <div style="background: #f0f6ff; padding: 16px; border-radius: 12px; margin-bottom: 14px; border-left: 4px solid #0070cc;">
-            <p style="margin: 0 0 10px; font-weight: 600; color: #0070cc;">📌 Vì sao phần Kinh nghiệm làm việc quan trọng?</p>
-            <p style="margin: 0;">Kinh nghiệm làm việc giúp nhà tuyển dụng đánh giá ứng viên đã từng làm những công việc gì, có những kỹ năng nào và có phù hợp với vị trí đang tuyển hay không. Nếu chưa có nhiều kinh nghiệm, ứng viên có thể trình bày công việc bán thời gian, thực tập, hoạt động tình nguyện hoặc các dự án liên quan.</p>
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px;">
+          <h2 style="margin: 0; font-size: clamp(3rem, 5vw, 4.5rem);">Khái niệm</h2>
+          <div style="flex: 1; min-height: 52px; max-width: 340px; background: #ffe300; border-radius: 18px;"></div>
+        </div>
+        <div style="margin-top: 24px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; align-items: start;">
+          <div>
+            <ul style="margin: 0; padding-left: 20px; color: #141d2d; line-height: 1.9; font-size: 1rem;">
+              <li>CV (Curriculum Vitae) thường được gọi là sơ yếu lý lịch. Đây là một bản tóm tắt chi tiết về trình độ học vấn, kinh nghiệm làm việc, kỹ năng và thành tựu của bản thân liên quan đến công việc mà bạn muốn ứng tuyển.</li>
+              <li style="margin-top: 18px;">CV đóng vai trò quan trọng trong việc giúp bạn tạo ấn tượng tốt đẹp với nhà tuyển dụng và gia tăng cơ hội nhận được công việc mong muốn.</li>
+              <li style="margin-top: 18px;">Một CV chuẩn và ấn tượng cần đảm bảo những yếu tố sau: Nội dung chính xác và đầy đủ, Trình bày rõ ràng và khoa học, Nổi bật những điểm mạnh, Chuyên nghiệp.</li>
+            </ul>
           </div>
-          <div style="background: #fff9f0; padding: 16px; border-radius: 12px; margin-bottom: 14px; border-left: 4px solid #ff9d34;">
-            <p style="margin: 0 0 10px; font-weight: 600; color: #ff9d34;">⚡ Cách sắp xếp</p>
-            <p style="margin: 0;">Sắp xếp theo thứ tự thời gian từ công việc gần nhất đến cũ hơn. Mỗi mục nên bao gồm: tên công ty, vị trí, thời gian (tháng/năm), mô tả công việc bằng gạch đầu dòng và thành tích (ưu tiên số liệu).</p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div style="background: #f5f7fb; border-radius: 24px; padding: 20px; min-height: 320px; box-shadow: 0 18px 40px rgba(23, 35, 56, 0.08);">
+              <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 18px;">
+                <div style="width: 48px; height: 48px; border-radius: 50%; background: #fff1b8;"></div>
+                <div style="flex: 1;">
+                  <div style="width: 100%; height: 12px; background: #dbe4ef; border-radius: 999px; margin-bottom: 10px;"></div>
+                  <div style="width: 60%; height: 10px; background: #e8eef8; border-radius: 999px;"></div>
+                </div>
+              </div>
+              <div style="display: grid; gap: 12px;">
+                <div style="width: 100%; height: 12px; background: #e7eef8; border-radius: 999px;"></div>
+                <div style="width: 100%; height: 12px; background: #e7eef8; border-radius: 999px;"></div>
+                <div style="width: 92%; height: 12px; background: #e7eef8; border-radius: 999px;"></div>
+                <div style="display: flex; gap: 10px; margin-top: 16px;"><div style="flex: 1; height: 10px; background: #dde6f0; border-radius:999px;"></div><div style="width: 40%; height: 10px; background: #dde6f0; border-radius:999px;"></div></div>
+              </div>
+            </div>
+            <div style="background: #f5f7fb; border-radius: 24px; padding: 20px; min-height: 320px; box-shadow: 0 18px 40px rgba(23, 35, 56, 0.08);">
+              <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 18px;">
+                <div style="width: 48px; height: 48px; border-radius: 50%; background: #d7ecff;"></div>
+                <div style="flex: 1;">
+                  <div style="width: 100%; height: 12px; background: #dbe4ef; border-radius: 999px; margin-bottom: 10px;"></div>
+                  <div style="width: 60%; height: 10px; background: #e8eef8; border-radius: 999px;"></div>
+                </div>
+              </div>
+              <div style="display: grid; gap: 12px;">
+                <div style="width: 100%; height: 12px; background: #e7eef8; border-radius: 999px;"></div>
+                <div style="width: 78%; height: 12px; background: #e7eef8; border-radius: 999px;"></div>
+                <div style="width: 100%; height: 12px; background: #e7eef8; border-radius: 999px;"></div>
+                <div style="display: flex; gap: 10px; margin-top: 16px;"><div style="flex: 1; height: 10px; background: #dde6f0; border-radius:999px;"></div><div style="width: 30%; height: 10px; background: #dde6f0; border-radius:999px;"></div></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     `
   },
   {
-    title: '3.2. Những nội dung cần có',
+    title: 'khái niệm',
     tag: 'Slide 4',
     content: `
       <div class="presenter-slide-content">
-        <h2>3.2. Những nội dung cần có</h2>
-        <div style="margin-top: 20px; font-size: 0.95rem; line-height: 1.8; color: #213a55;">
-          <div style="background: #f0fff4; padding: 16px; border-radius: 12px; border-left: 4px solid #16a34a;">
-            <p style="margin: 0 0 10px; font-weight: 600; color: #16a34a;">✅ Những nội dung cần có</p>
-            <ul style="margin: 0; padding-left: 20px;">
-              <li>Tên công ty hoặc đơn vị làm việc</li>
-              <li>Vị trí đảm nhiệm</li>
-              <li>Thời gian làm việc (tháng/năm bắt đầu – tháng/năm kết thúc)</li>
-              <li>Mô tả công việc chính (dùng gạch đầu dòng, tập trung nhiệm vụ liên quan)</li>
-              <li>Thành tích / kết quả đạt được (dùng số liệu cụ thể nếu có)</li>
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px;">
+          <h2 style="margin: 0; font-size: clamp(3rem, 5vw, 4.5rem);">Khái niệm</h2>
+          <div style="flex: 1; min-height: 52px; max-width: 340px; background: #ffe300; border-radius: 18px;"></div>
+        </div>
+        <div style="margin-top: 24px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; align-items: start;">
+          <div>
+            <p style="margin: 0 0 16px; font-weight: 700; font-size: 1rem; color: #141d2d;">Một CV thường gồm các phần chính sau:</p>
+            <ul style="margin: 0; padding-left: 20px; color: #141d2d; line-height: 1.9; font-size: 1rem;">
+              <li>Thông tin cá nhân và thông tin liên hệ.</li>
+              <li>Vị trí ứng tuyển.</li>
+              <li>Mục tiêu nghề nghiệp.</li>
+              <li>Trình độ học vấn, bằng cấp và chứng chỉ.</li>
+              <li>Kinh nghiệm làm việc hoặc dự án đã tham gia.</li>
+              <li>Kỹ năng chuyên môn và kỹ năng mềm.</li>
+              <li>Hoạt động, thành tích hoặc sở thích có liên quan.</li>
             </ul>
-            <p style="margin-top:8px;">Dùng động từ hành động: tư vấn, quản lý, lập kế hoạch, hỗ trợ, triển khai, phân tích, phối hợp. Nhấn mạnh giá trị bạn tạo ra cho doanh nghiệp.</p>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+            <div style="background: #f5f7fb; border-radius: 24px; padding: 18px; box-shadow: 0 18px 40px rgba(23, 35, 56, 0.08);">
+              <img src="Image/ChatGPT Image 14_27_06 12 thg 7, 2026.png" alt="CV mẫu 1" style="width: 100%; height: auto; border-radius: 20px; display: block;" />
+            </div>
+            <div style="background: #f5f7fb; border-radius: 24px; padding: 18px; box-shadow: 0 18px 40px rgba(23, 35, 56, 0.08);">
+              <img src="Image/ChatGPT Image 14_33_05 12 thg 7, 2026.png" alt="CV mẫu 2" style="width: 100%; height: auto; border-radius: 20px; display: block;" />
+            </div>
           </div>
         </div>
       </div>
     `
   },
   {
-    title: '3.3. Ví dụ kinh nghiệm làm việc',
+    title: 'Mục tiêu nghề nghiệp',
     tag: 'Slide 5',
+    content: `
+      <div class="presenter-slide-content">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px;">
+          <h2 style="margin: 0; font-size: clamp(3rem, 5vw, 4.5rem);">Mục tiêu nghề nghiệp</h2>
+          <div style="flex: 1; min-height: 52px; max-width: 340px; background: #ffe300; border-radius: 18px;"></div>
+        </div>
+        <p style="margin: 24px 0 0; max-width: 760px; color: #121924; line-height: 1.8; font-size: 1rem;">Mục tiêu nghề nghiệp là một đoạn văn ngắn gọn (thường từ 2 đến 3 câu) nằm ở phần đầu của CV, ngay dưới thông tin liên hệ. Đây là cơ hội đầu tiên để ứng viên gây ấn tượng với nhà tuyển dụng bằng cách thể hiện rõ định hướng phát triển và sự phù hợp của bản thân với vị trí đang ứng tuyển.</p>
+        <div style="margin-top: 28px; padding: 26px 28px; border: 5px solid #000; border-radius: 44px; background: #ffffff; max-width: 900px;">
+          <p style="margin: 0 0 14px; font-weight: 700; font-size: 1rem;">Ví dụ:</p>
+          <p style="margin: 0 0 14px;">Ứng tuyển vị trí Thực tập sinh Frontend Developer</p>
+          <p style="margin: 0 0 14px;"><strong>Mục tiêu ngắn hạn:</strong> Áp dụng tư duy logic và các kỹ năng lập trình giao diện (ReactJS, Vite, Bootstrap) để xây dựng các ứng dụng web tương tác mượt mà, trực tiếp đóng góp vào việc tối ưu hóa trải nghiệm người dùng cho các dự án hiện tại của công ty.</p>
+          <p style="margin: 0;"><strong>Mục tiêu dài hạn:</strong> Không ngừng nâng cao kỹ năng xử lý hệ thống và kiến trúc phần mềm để phát triển thành một Senior Frontend Engineer, có khả năng dẫn dắt đội ngũ trong các dự án công nghệ quy mô lớn.</p>
+        </div>
+      </div>
+    `
+  },
+  {
+    title: 'Kinh nghiệm làm việc',
+    tag: 'Slide 6',
+    content: `
+      <div class="presenter-slide-content">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px;">
+          <h2 style="margin: 0; font-size: clamp(2.4rem, 4vw, 3.5rem);">Kinh nghiệm làm việc</h2>
+          <div style="flex: 1; min-height: 74px; max-width: 420px; background: #ffe300; border-radius: 22px;"></div>
+        </div>
+        <p style="margin: 24px 0 0; max-width: 860px; color: #121924; line-height: 1.8; font-size: 1rem;">Kinh nghiệm làm việc là một trong những phần quan trọng nhất của CV vì giúp nhà tuyển dụng đánh giá ứng viên đã từng làm những công việc gì, có những kỹ năng nào và có phù hợp với vị trí đang tuyển hay không.</p>
+        <div style="margin-top: 28px; position: relative; background: #eef2f7; border-radius: 28px; padding: 28px 32px; max-width: 920px;">
+          <p style="margin: 0 0 14px; font-weight: 700; font-size: 1rem; color: #111827;">Mỗi kinh nghiệm cần trình bày đầy đủ các nội dung sau:</p>
+          <ul style="margin: 0; padding-left: 20px; color: #111827; line-height: 1.9; font-size: 0.98rem;">
+            <li>Tên công ty hoặc đơn vị làm việc.</li>
+            <li>Vị trí đảm nhiệm.</li>
+            <li>Thời gian làm việc (tháng/năm bắt đầu – tháng/năm kết thúc).</li>
+            <li>Mô tả công việc chính, trình bày bằng các gạch đầu dòng, tập trung vào những nhiệm vụ liên quan đến vị trí ứng tuyển.</li>
+            <li>Thành tích hoặc kết quả đạt được, ưu tiên sử dụng số liệu cụ thể để tăng tính thuyết phục.</li>
+          </ul>
+          <div style="position: absolute; bottom: -58px; right: 18px; width: 128px; padding: 10px 12px; background: #ffffff; border: 2px solid #000000; border-radius: 16px; box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);">
+            <p style="margin: 0; font-weight: 700; font-size: 0.78rem; line-height: 1.2;">Kinh<br>nghiệm<br>làm việc</p>
+          </div>
+          <div style="position: absolute; top: 16px; left: 22px; width: 36px; height: 10px; background: #000000; transform: rotate(-6deg); border-radius: 4px;"></div>
+        </div>
+      </div>
+    `
+  },  
+  {
+    title: 'Ví dụ kinh nghiệm làm việc',
+    tag: 'Slide 7',
     content: `
       <div class="presenter-slide-content">
         <div style="display:flex; justify-content:center; align-items:center; margin-top:12px;">
@@ -80,12 +207,12 @@ const slides = [
       </div>
     `
   },
-  {
-    title: '4.1. Bằng cấp, chứng chỉ, học vấn',
-    tag: 'Slide 5',
+{
+    title: 'Bằng cấp, chứng chỉ, học vấn',
+    tag: 'Slide 8',
     content: `
       <div class="presenter-slide-content">
-        <h2>4.1. Bằng cấp, chứng chỉ, học vấn</h2>
+        <h2>Bằng cấp, chứng chỉ, học vấn</h2>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px; font-size: 0.95rem;">
           <div style="background: #f7fbff; border: 1px solid #dcebf8; border-radius: 14px; padding: 18px;">
             <h3 style="margin-bottom: 8px; font-size: 1.05rem; color: #0070cc;">Thông tin học vấn</h3>
@@ -106,11 +233,11 @@ const slides = [
     `
   },
   {
-    title: '4.2. Vai trò',
-    tag: 'Slide 5',
+    title: 'Vai trò',
+    tag: 'Slide 9',
     content: `
       <div class="presenter-slide-content">
-        <h2>4.2. Vai trò</h2>
+        <h2>Vai trò</h2>
         <div style="display: grid; gap: 16px; margin-top: 24px;">
           <div style="background: #f0f6ff; padding: 16px; border-radius: 12px; border-left: 4px solid #0052a3;">
             <h3 style="margin: 0 0 8px; color: #0052a3;">📚 Vai trò của trình độ học vấn 🎓</h3>
@@ -134,7 +261,7 @@ const slides = [
   },
   {
     title: 'Ảnh minh họa',
-    tag: 'Slide 7',
+    tag: 'Slide 10',
     content: `
       <div class="presenter-slide-content">
         <h2>Ảnh minh họa</h2>
@@ -145,34 +272,46 @@ const slides = [
     `
   },
   {
-    title: '5. Tại sao phần "Kỹ năng" lại quan trọng?',
-    tag: 'Slide 8',
+    title: 'Kỹ năng',
+    tag: 'Slide 11',
     content: `
       <div class="presenter-slide-content">
-        <h2>5. Tại sao phần "Kỹ năng" lại quan trọng?</h2>
-        <div style="display: grid; gap: 16px; margin-top: 24px;">
-          <div style="background: #f0f6ff; padding: 18px; border-radius: 12px; border-left: 5px solid #0070cc;">
-            <h3 style="margin: 0 0 8px; color: #0070cc; font-size: 1.05rem;">📋 Điểm chạm đầu tiên</h3>
-            <p style="margin: 0; color: #213a55; line-height: 1.6;">Nhà tuyển dụng thường quét nhanh (scan) phần kỹ năng để xem bạn có "khớp" với JD (Mô tả công việc) hay không.</p>
-          </div>
-          <div style="background: #f0f6ff; padding: 18px; border-radius: 12px; border-left: 5px solid #0070cc;">
-            <h3 style="margin: 0 0 8px; color: #0070cc; font-size: 1.05rem;">⚡ Tóm tắt năng lực</h3>
-            <p style="margin: 0; color: #213a55; line-height: 1.6;">Giúp người xem nắm bắt nhanh những gì bạn làm được mà không cần đọc hết kinh nghiệm làm việc.</p>
-          </div>
-          <div style="background: #f0f6ff; padding: 18px; border-radius: 12px; border-left: 5px solid #0070cc;">
-            <h3 style="margin: 0 0 8px; color: #0070cc; font-size: 1.05rem;">🎯 Tối ưu hóa ATS</h3>
-            <p style="margin: 0; color: #213a55; line-height: 1.6;">Là "mỏ vàng" để chứa các từ khóa (Keywords) giúp vượt qua hệ thống sàng lọc tự động (ATS).</p>
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap;">
+          <h2 style="margin: 0; font-size: clamp(3rem, 5vw, 4.4rem); letter-spacing: -0.04em; color: #17233c;">Kỹ năng</h2>
+          <div style="flex: 1; min-height: 58px; max-width: 440px; background: #ffe300; border-radius: 20px;"></div>
+        </div>
+        <div style="background: #ffffff; border-radius: 32px; padding: 26px; box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08); border: 1px solid rgba(15, 23, 42, 0.08); margin-top: 28px;">
+          <div style="display: grid; grid-template-columns: 0.5fr 0.5fr; gap: 24px; align-items: stretch;">
+            <div style="background: #ffe200; border-radius: 28px; padding: 32px; min-height: 320px; box-shadow: 0 20px 40px rgba(255, 214, 0, 0.18); display: flex; flex-direction: column; justify-content: flex-start;">
+              <div style="font-size: 1.5rem; font-weight: 900; color: #111827; line-height: 1.1; text-align: center; font-style: italic; margin-bottom: 18px;">Khái niệm</div>
+              <p style="margin: 0; color: #17233c; line-height: 1.85; font-size: 1rem;">Trong một bản CV xin việc, phần kỹ năng (Skills) là nơi thể hiện những năng lực thực tế giúp bạn hoàn thành công việc hiệu quả.</p>
+              <p>Đây là yếu tố quan trọng để nhà tuyển dụng đánh giá mức độ phù hợp của ứng viên với yêu cầu của vị trí đang tuyển. Kỹ năng nên được trình bày ngắn gọn, rõ ràng và liên quan trực tiếp đến công việc.</p>
+            </div>
+            <div style="background: #f5f8fd; border-radius: 28px; padding: 32px; display: grid; gap: 18px; box-shadow: 0 20px 40px rgba(16, 24, 40, 0.08);">
+              <div style="background: #ffffff; border-radius: 22px; padding: 18px 20px; box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);">
+                <p style="margin: 0 0 10px; font-weight: 700; color: #17233c;">Đặc điểm cần có</p>
+                <ul style="margin: 0; padding-left: 18px; color: #334155; line-height: 1.8; font-size: 0.98rem;">
+                  <li>Ngắn gọn, súc tích, dễ quét</li>
+                  <li>Liên quan trực tiếp đến vị trí ứng tuyển</li>
+                  <li>Dùng từ khóa quan trọng</li>
+                </ul>
+              </div>
+              <div style="background: #ffffff; border-radius: 22px; padding: 18px 20px; box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);">
+                <p style="margin: 0 0 10px; font-weight: 700; color: #17233c;">Lưu ý trình bày</p>
+                <p style="margin: 0; color: #334155; line-height: 1.75; font-size: 0.98rem;">Sắp xếp rõ ràng, chia thành nhóm kỹ năng, và ưu tiên kỹ năng phù hợp với công việc nhất.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     `
   },
   {
-    title: '5.1. Phân loại Kỹ năng (Bộ khung chuẩn)',
-    tag: 'Slide 9',
+    title: 'Phân loại Kỹ năng',
+    tag: 'Slide 12',
     content: `
       <div class="presenter-slide-content">
-        <h2>5.1. Phân loại Kỹ năng (Bộ khung chuẩn)</h2>
+        <h2>Phân loại Kỹ năng</h2>
         <div style="display: grid; gap: 14px; margin-top: 24px;">
           <div style="background: #f5faff; padding: 16px; border-radius: 12px; border-left: 4px solid #0052a3;">
             <h3 style="margin: 0 0 6px; color: #0052a3; font-size: 1rem;">💻 Hard Skills (Kỹ năng cứng)</h3>
@@ -191,11 +330,35 @@ const slides = [
     `
   },
   {
-    title: '5.2. Quy tắc "Vàng" & Những lỗi thường gặp',
-    tag: 'Slide 10',
+    title: 'Tại sao phần "Kỹ năng" lại quan trọng?',
+    tag: 'Slide 13',
     content: `
       <div class="presenter-slide-content">
-        <h2>5.2. Quy tắc "Vàng" & Những lỗi thường gặp</h2>
+        <h2>Tại sao phần "Kỹ năng" lại quan trọng?</h2>
+        <div style="display: grid; gap: 16px; margin-top: 24px;">
+          <div style="background: #f0f6ff; padding: 18px; border-radius: 12px; border-left: 5px solid #0070cc;">
+            <h3 style="margin: 0 0 8px; color: #0070cc; font-size: 1.05rem;">📋 Điểm chạm đầu tiên</h3>
+            <p style="margin: 0; color: #213a55; line-height: 1.6;">Nhà tuyển dụng thường quét nhanh (scan) phần kỹ năng để xem bạn có "khớp" với JD (Mô tả công việc) hay không.</p>
+          </div>
+          <div style="background: #f0f6ff; padding: 18px; border-radius: 12px; border-left: 5px solid #0070cc;">
+            <h3 style="margin: 0 0 8px; color: #0070cc; font-size: 1.05rem;">⚡ Tóm tắt năng lực</h3>
+            <p style="margin: 0; color: #213a55; line-height: 1.6;">Giúp người xem nắm bắt nhanh những gì bạn làm được mà không cần đọc hết kinh nghiệm làm việc.</p>
+          </div>
+          <div style="background: #f0f6ff; padding: 18px; border-radius: 12px; border-left: 5px solid #0070cc;">
+            <h3 style="margin: 0 0 8px; color: #0070cc; font-size: 1.05rem;">🎯 Tối ưu hóa ATS</h3>
+            <p style="margin: 0; color: #213a55; line-height: 1.6;">Là "mỏ vàng" để chứa các từ khóa (Keywords) giúp vượt qua hệ thống sàng lọc tự động (ATS).</p>
+          </div>
+        </div>
+      </div>
+    `
+  },
+
+  {
+    title: 'Quy tắc "Vàng" & Những lỗi thường gặp',
+    tag: 'Slide 14',
+    content: `
+      <div class="presenter-slide-content">
+        <h2>Quy tắc "Vàng" & Những lỗi thường gặp</h2>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; font-size: 0.93rem; margin-bottom: 20px;">
           <div style="background: #f0f8ff; padding: 16px; border-radius: 12px; border: 1px solid #bfe0ff;">
             <h3 style="margin: 0 0 12px; color: #0070cc; font-size: 1rem;">✅ Quy tắc "Vàng"</h3>
@@ -218,8 +381,8 @@ const slides = [
     `
   },
   {
-    title: '5.3. Ví dụ theo nghề',
-    tag: 'Slide 11',
+    title: 'Ví dụ theo nghề',
+    tag: 'Slide 15',
     content: `
       <div class="presenter-slide-content">
         <div style="display:flex; justify-content:center; align-items:center; margin-top:20px;">
@@ -229,11 +392,11 @@ const slides = [
     `
   },
   {
-    title: '6.1. CV mẫu hoàn chỉnh',
-    tag: 'Slide 11',
+    title: 'CV mẫu hoàn chỉnh',
+    tag: 'Slide 16',
     content: `
       <div class="presenter-slide-content">
-        <h2>6.1. CV mẫu hoàn chỉnh</h2>
+        <h2>CV mẫu hoàn chỉnh</h2>
         <div style="display: flex; justify-content: center; gap: 18px; margin-top: 24px; flex-wrap: wrap;">
           <img src="Image/Cv.jpg" alt="CV mẫu hoàn chỉnh" style="max-width: 100%; max-height: 420px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);" />
           <img src="Image/cv-badge.svg" alt="Biểu tượng CV" style="max-width: 120px; align-self: center;" />
@@ -242,11 +405,11 @@ const slides = [
     `
   },
   {
-    title: '6.2. Bài học rút ra khi viết CV',
-    tag: 'Slide 12',
+    title: 'Bài học rút ra khi viết CV',
+    tag: 'Slide 17',
     content: `
       <div class="presenter-slide-content">
-        <h2>6.2. Bài học rút ra khi viết CV</h2>
+        <h2>Bài học rút ra khi viết CV</h2>
         <div style="margin-top: 24px; background: #f5faff; padding: 20px; border-radius: 14px; border-left: 5px solid #0070cc; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);">
           <ul style="margin: 0; padding-left: 20px; line-height: 1.8; color: #213a55; font-size: 1rem;">
             <li>Trình bày đẹp, dễ đọc.</li>
@@ -263,11 +426,11 @@ const slides = [
     `
   },
   {
-    title: '7. Tổng kết',
-    tag: 'Slide 13',
+    title: 'Tổng kết',
+    tag: 'Slide 18',
     content: `
       <div class="presenter-slide-content">
-        <h2>7. Tổng kết</h2>
+        <h2>Tổng kết</h2>
         <div style="margin-top: 18px; background: #f7fbff; padding: 16px; border-radius: 12px; border-left: 4px solid #0070cc; font-size: 0.95rem; line-height: 1.7;">
           <p>Qua nội dung trình bày, nhóm nhận thấy rằng CV là "tấm vé đầu tiên" giúp ứng viên tiếp cận nhà tuyển dụng. Một CV hiệu quả không chỉ trình bày đầy đủ thông tin mà còn phải thể hiện rõ mục tiêu nghề nghiệp, kinh nghiệm làm việc, trình độ học vấn và các kỹ năng phù hợp với vị trí ứng tuyển.</p>
           <p>Đối với sinh viên, dù chưa có nhiều kinh nghiệm, vẫn có thể tạo ấn tượng bằng các dự án học tập, hoạt động ngoại khóa, chứng chỉ và kỹ năng chuyên môn. Bên cạnh đó, cần trình bày CV ngắn gọn, rõ ràng, trung thực và sử dụng số liệu cụ thể để chứng minh năng lực.</p>
@@ -278,7 +441,7 @@ const slides = [
   },
   {
     title: 'Câu hỏi ôn tập trắc nghiệm 1',
-    tag: 'Slide 14',
+    tag: 'Slide 19',
     content: `
       <div class="presenter-slide-content">
         <h2>Câu hỏi ôn tập trắc nghiệm 1</h2>
@@ -300,7 +463,7 @@ const slides = [
   },
   {
     title: 'Câu hỏi ôn tập trắc nghiệm 2',
-    tag: 'Slide 15',
+    tag: 'Slide 20',
     content: `
       <div class="presenter-slide-content">
         <h2>Câu hỏi ôn tập trắc nghiệm 2</h2>
@@ -322,7 +485,7 @@ const slides = [
   },
   {
     title: 'Câu hỏi ôn tập trắc nghiệm 3',
-    tag: 'Slide 16',
+    tag: 'Slide 21',
     content: `
       <div class="presenter-slide-content">
         <h2>Câu hỏi ôn tập trắc nghiệm 3</h2>
@@ -344,7 +507,7 @@ const slides = [
   },
   {
     title: 'Câu hỏi ôn tập trắc nghiệm 4',
-    tag: 'Slide 17',
+    tag: 'Slide 22',
     content: `
       <div class="presenter-slide-content">
         <h2>Câu hỏi ôn tập trắc nghiệm 4</h2>
@@ -366,7 +529,7 @@ const slides = [
   },
   {
     title: '16. Câu hỏi ôn tập trắc nghiệm 5',
-    tag: 'Slide 18',
+    tag: 'Slide 23',
     content: `
       <div class="presenter-slide-content">
         <h2>16. Câu hỏi ôn tập trắc nghiệm 5</h2>
@@ -394,8 +557,10 @@ const counter = document.getElementById('presenterCounter');
 const closeBtn = document.getElementById('closePresenter');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
-const thumbItems = document.querySelectorAll('.thumb-item');
-const navDots = document.querySelectorAll('.slide-nav span');
+const thumbList = document.getElementById('thumbList');
+const slideNav = document.getElementById('slideNav');
+let thumbItems = [];
+let navDots = [];
 const chip = document.querySelector('.chip');
 const previewChip = document.getElementById('previewChip');
 const previewStage = document.getElementById('previewStage');
@@ -403,6 +568,39 @@ const previewPanel = document.getElementById('previewPanel');
 const fullscreenBtn = document.getElementById('fullscreenBtn');
 const decorCanvas = document.getElementById('decorCanvas');
 const presenterDecorCanvas = document.getElementById('presenterDecorCanvas');
+
+const slideIcons = [
+  '📘','🧭','🎯','💼','📋','📝','🎓','🧭','🖼️','❓','📚','⚡','🧩','📄','💡','🧾','❓','❓','❓','❓','✅','📌','📑'
+];
+
+function buildNavigation() {
+  if (!thumbList || !slideNav) return;
+
+  thumbList.innerHTML = '';
+  slideNav.innerHTML = '';
+
+  slides.forEach((slide, index) => {
+    const thumb = document.createElement('button');
+    thumb.type = 'button';
+    thumb.className = 'thumb-item';
+    thumb.dataset.slideIndex = index;
+    thumb.innerHTML = `
+      <span class="thumb-number">${String(index + 1).padStart(2, '0')}</span>
+      <span class="thumb-icon">${slideIcons[index] || '📄'}</span>
+      <div><strong>${slide.title}</strong></div>
+    `;
+    thumb.addEventListener('click', () => renderSlide(index));
+    thumbList.appendChild(thumb);
+
+    const dot = document.createElement('span');
+    dot.dataset.index = index;
+    dot.addEventListener('click', () => renderSlide(index));
+    slideNav.appendChild(dot);
+  });
+
+  thumbItems = Array.from(thumbList.querySelectorAll('.thumb-item'));
+  navDots = Array.from(slideNav.querySelectorAll('span'));
+}
 
 function setupDecorCanvas(canvas) {
   if (!canvas) return;
@@ -483,6 +681,8 @@ setupDecorCanvas(decorCanvas);
 setupDecorCanvas(presenterDecorCanvas);
 
 let currentIndex = 0;
+
+buildNavigation();
 
 // Animate list items with a staggered reveal
 function animateReveal(root) {
