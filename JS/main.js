@@ -484,6 +484,104 @@ setupDecorCanvas(presenterDecorCanvas);
 
 let currentIndex = 0;
 
+// Animate list items with a staggered reveal
+function animateReveal(root) {
+  if (!root) return;
+  const lists = root.querySelectorAll('ul');
+  lists.forEach((list) => {
+    const items = Array.from(list.querySelectorAll('li'));
+    items.forEach((li, i) => {
+      li.classList.add('reveal');
+      li.classList.remove('visible');
+      setTimeout(() => li.classList.add('visible'), i * 85);
+    });
+  });
+}
+
+// Title pop animation
+function applyTitleAnimation(root) {
+  if (!root) return;
+  const h2 = root.querySelector('h2');
+  if (!h2) return;
+  h2.classList.remove('title-animate');
+  // trigger reflow to restart animation
+  void h2.offsetWidth;
+  h2.classList.add('title-animate');
+}
+
+// Simple confetti launcher
+function launchConfetti(count = 28) {
+  const colors = ['#ff4757', '#ffa502', '#2ed573', '#1e90ff', '#ff6b81', '#7f8fa6'];
+  const container = document.createElement('div');
+  container.style.position = 'fixed';
+  container.style.left = '0';
+  container.style.top = '0';
+  container.style.width = '100%';
+  container.style.height = '100%';
+  container.style.pointerEvents = 'none';
+  container.style.overflow = 'visible';
+  container.style.zIndex = 99999;
+
+  for (let i = 0; i < count; i += 1) {
+    const c = document.createElement('div');
+    c.className = 'confetti';
+    const w = 8 + Math.round(Math.random() * 10);
+    const left = Math.random() * 100;
+    c.style.left = `${left}vw`;
+    c.style.top = `${-5 - Math.random() * 5}vh`;
+    c.style.width = `${w}px`;
+    c.style.height = `${Math.round(w * 1.3)}px`;
+    c.style.background = colors[Math.floor(Math.random() * colors.length)];
+    const dur = 1400 + Math.round(Math.random() * 900);
+    c.style.animation = `confettiFall ${dur}ms cubic-bezier(.2,.6,.2,1) forwards`;
+    c.style.transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+    container.appendChild(c);
+  }
+
+  document.body.appendChild(container);
+  setTimeout(() => {
+    container.remove();
+  }, 2600);
+}
+
+// Per-slide geometric badges (appear when rendering slide)
+function addGeoBadges(root, index) {
+  if (!root) return;
+  // remove existing
+  root.querySelectorAll('.geo-badge').forEach(n => n.remove());
+
+  // Use a single AVIF image as geometric badge content so it's consistent
+  const imgSrc = 'Image/Element.avif';
+  const count = 2 + (index % 2); // 2 or 3 badges
+  const positions = [
+    { left: '6%', top: '8%' },
+    { left: '84%', top: '8%' },
+    { left: '6%', top: '76%' },
+    { left: '82%', top: '72%' },
+    { left: '28%', top: '6%' },
+    { left: '72%', top: '6%' }
+  ];
+
+  for (let i = 0; i < count; i++) {
+    const badge = document.createElement('div');
+    badge.className = 'geo-badge pop float';
+    const pos = positions[(index * 3 + i) % positions.length];
+    badge.style.left = pos.left;
+    badge.style.top = pos.top;
+    badge.style.opacity = `${0.12 + (i * 0.04)}`;
+    badge.style.animationDelay = `${i * 150}ms`;
+    // image element
+    const img = document.createElement('img');
+    img.src = imgSrc;
+    img.alt = 'decorative element';
+    img.className = 'geo-badge-img';
+    // slight rotation variation
+    badge.style.transform = `rotate(${(index * 13 + i * 11) % 20 - 10}deg)`;
+    badge.appendChild(img);
+    root.appendChild(badge);
+  }
+}
+
 function renderSlide(index) {
   currentIndex = (index + slides.length) % slides.length;
   const content = slides[currentIndex].content.replace('presenter-slide-content', 'presenter-slide-content slide-enter');
@@ -498,6 +596,17 @@ function renderSlide(index) {
   navDots.forEach((dot, dotIndex) => {
     dot.classList.toggle('active', dotIndex === currentIndex);
   });
+
+  // apply UI animations
+  // animate reveal of list items and title in both preview & presenter
+  animateReveal(stage);
+  animateReveal(previewStage);
+  applyTitleAnimation(stage);
+  applyTitleAnimation(previewStage);
+
+  // add per-slide geometric badges
+  try { addGeoBadges(previewStage, currentIndex); } catch (e) {}
+  try { addGeoBadges(stage, currentIndex); } catch (e) {}
 
   attachQuizHandlers();
 }
@@ -528,6 +637,10 @@ function attachQuizHandlers() {
 
         if (answerText) {
           answerText.textContent = option.dataset.correct === 'true' ? '' : `Đáp án đúng: ${question.dataset.correctText}`;
+        }
+        // launch confetti when correct
+        if (option.dataset.correct === 'true') {
+          try { launchConfetti(); } catch (e) { /* ignore */ }
         }
       });
     });
