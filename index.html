@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="presentation-shell">
+        <canvas id="decorCanvas" class="decor-canvas" aria-hidden="true"></canvas>
         <header class="topbar">
             <div class="brand">
                 <div class="brand-badge pulse">Nhóm 6</div>
@@ -16,7 +17,7 @@
                     <h1>Kỹ năng viết CV</h1>
                 </div>
             </div>
-            <div class="chip">Slide 1 / 18</div>
+            <div class="chip">Slide 1 / 20</div>
         </header>
 
         <main class="artboard">
@@ -25,111 +26,103 @@
                 <div class="thumb-list">
                     <button class="thumb-item active" data-slide-index="0" type="button">
                         <span class="thumb-number">01</span>
-                        <div>
-                            <strong>Giới thiệu</strong>
-                        </div>
+                        <span class="thumb-icon">📘</span>
+                        <div><strong>Giới thiệu</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="1" type="button">
                         <span class="thumb-number">02</span>
-                        <div>
-                            <strong>Mục tiêu</strong>
-                        </div>
+                        <span class="thumb-icon">🎯</span>
+                        <div><strong>Mục tiêu</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="2" type="button">
                         <span class="thumb-number">03</span>
-                        <div>
-                            <strong>Kinh nghiệm</strong>
-                        </div>
+                        <span class="thumb-icon">💼</span>
+                        <div><strong>Kinh nghiệm: Vì sao & Sắp xếp</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="3" type="button">
                         <span class="thumb-number">04</span>
-                        <div>
-                            <strong>Học vấn</strong>
-                        </div>
+                        <span class="thumb-icon">📋</span>
+                        <div><strong>Những nội dung cần có</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="4" type="button">
                         <span class="thumb-number">05</span>
-                        <div>
-                            <strong>Ảnh minh họa</strong>
-                        </div>
+                        <span class="thumb-icon">📝</span>
+                        <div><strong>Ví dụ kinh nghiệm</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="5" type="button">
                         <span class="thumb-number">06</span>
-                        <div>
-                            <strong>Kỹ năng</strong>
-                        </div>
+                        <span class="thumb-icon">🎓</span>
+                        <div><strong>Học vấn & Chứng chỉ</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="6" type="button">
                         <span class="thumb-number">07</span>
-                        <div>
-                            <strong>Thông tin cá nhân</strong>
-                        </div>
+                        <span class="thumb-icon">🧭</span>
+                        <div><strong>Vai trò</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="7" type="button">
                         <span class="thumb-number">08</span>
-                        <div>
-                            <strong>Mục tiêu nghề nghiệp</strong>
-                        </div>
+                        <span class="thumb-icon">🖼️</span>
+                        <div><strong>Ảnh minh họa</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="8" type="button">
                         <span class="thumb-number">09</span>
-                        <div>
-                            <strong>Trình độ & bằng cấp</strong>
-                        </div>
+                        <span class="thumb-icon">❓</span>
+                        <div><strong>Tại sao kỹ năng</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="9" type="button">
                         <span class="thumb-number">10</span>
-                        <div>
-                            <strong>Kinh nghiệm</strong>
-                        </div>
+                        <span class="thumb-icon">📚</span>
+                        <div><strong>Phân loại Kỹ năng</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="10" type="button">
                         <span class="thumb-number">11</span>
-                        <div>
-                            <strong>Trình bày kĩ năng</strong>
-                        </div>
+                        <span class="thumb-icon">⚡</span>
+                        <div><strong>Quy tắc & Lỗi</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="11" type="button">
                         <span class="thumb-number">12</span>
-                        <div>
-                            <strong>Bài học rút ra</strong>
-                        </div>
+                        <span class="thumb-icon">🧩</span>
+                        <div><strong>Ví dụ theo nghề</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="12" type="button">
                         <span class="thumb-number">13</span>
-                        <div>
-                            <strong>Tổng kết</strong>
-                        </div>
+                        <span class="thumb-icon">📄</span>
+                        <div><strong>CV mẫu</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="13" type="button">
                         <span class="thumb-number">14</span>
-                        <div>
-                            <strong>Trắc nghiệm 1</strong>
-                        </div>
+                        <span class="thumb-icon">💡</span>
+                        <div><strong>Bài học</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="14" type="button">
                         <span class="thumb-number">15</span>
-                        <div>
-                            <strong>Trắc nghiệm 2</strong>
-                        </div>
+                        <span class="thumb-icon">🧾</span>
+                        <div><strong>Tổng kết</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="15" type="button">
                         <span class="thumb-number">16</span>
-                        <div>
-                            <strong>Trắc nghiệm 3</strong>
-                        </div>
+                        <span class="thumb-icon">❓</span>
+                        <div><strong>Trắc nghiệm 1</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="16" type="button">
                         <span class="thumb-number">17</span>
-                        <div>
-                            <strong>Trắc nghiệm 4</strong>
-                        </div>
+                        <span class="thumb-icon">❓</span>
+                        <div><strong>Trắc nghiệm 2</strong></div>
                     </button>
                     <button class="thumb-item" data-slide-index="17" type="button">
                         <span class="thumb-number">18</span>
-                        <div>
-                            <strong>Trắc nghiệm 5</strong>
-                        </div>
+                        <span class="thumb-icon">❓</span>
+                        <div><strong>Trắc nghiệm 3</strong></div>
+                    </button>
+                    <button class="thumb-item" data-slide-index="18" type="button">
+                        <span class="thumb-number">19</span>
+                        <span class="thumb-icon">❓</span>
+                        <div><strong>Trắc nghiệm 4</strong></div>
+                    </button>
+                    <button class="thumb-item" data-slide-index="19" type="button">
+                        <span class="thumb-number">20</span>
+                        <span class="thumb-icon">❓</span>
+                        <div><strong>Trắc nghiệm 5</strong></div>
                     </button>
                 </div>
             </aside>
@@ -139,7 +132,7 @@
                     <span class="preview-label">Slide đang chọn</span>
                     <div class="toolbar-actions">
                         <button class="action-btn" id="fullscreenBtn" type="button">⛶ Fullscreen</button>
-                        <div class="chip preview-chip" id="previewChip">Slide 1 / 18</div>
+                        <div class="chip preview-chip" id="previewChip">Slide 1 / 20</div>
                     </div>
                 </div>
                 <div class="preview-stage" id="previewStage"></div>
@@ -165,16 +158,19 @@
             <span data-index="15"></span>
             <span data-index="16"></span>
             <span data-index="17"></span>
+            <span data-index="18"></span>
+            <span data-index="19"></span>
         </div>
     </div>
 
     <div class="presenter-overlay" id="presenterOverlay" aria-hidden="true">
         <div class="presenter-frame">
+            <canvas id="presenterDecorCanvas" class="presenter-decor-canvas" aria-hidden="true"></canvas>
             <button class="presenter-close" id="closePresenter" type="button" aria-label="Đóng trình chiếu">×</button>
             <div class="presenter-stage" id="presenterStage"></div>
-            <div class="presenter-controls">
+                <div class="presenter-controls">
                 <button class="nav-btn" id="prevBtn" type="button">← Trước</button>
-                <div class="presenter-counter" id="presenterCounter">1 / 18</div>
+                <div class="presenter-counter" id="presenterCounter">1 / 20</div>
                 <button class="nav-btn" id="nextBtn" type="button">Sau →</button>
             </div>
         </div>

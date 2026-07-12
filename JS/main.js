@@ -5,6 +5,15 @@ const slides = [
     content: `
       <div class="presenter-slide-content">
         <h2>1. Giới thiệu, khái niệm CV, vai trò, cấu trúc CV</h2>
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; align-items: center; margin-top: 24px;">
+          <div style="background: #f7fbff; border: 1px solid #dcebf8; border-radius: 16px; padding: 20px;">
+            <p style="margin: 0 0 10px; font-size: 1rem; color: #4a5f7f;">CV là công cụ giúp bạn giới thiệu bản thân một cách chuyên nghiệp trước nhà tuyển dụng.</p>
+            <p style="margin: 0; font-size: 1rem; color: #4a5f7f;">Một CV tốt cần rõ mục tiêu, trình bày đẹp và phù hợp với vị trí ứng tuyển.</p>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <img src="Image/cv-hero.svg" alt="Hình minh họa CV" style="max-width: 100%; max-height: 280px;" />
+          </div>
+        </div>
       </div>
     `
   },
@@ -18,195 +27,244 @@ const slides = [
     `
   },
   {
-    title: '3. Kinh nghiệm làm việc',
+    title: '3.1. Kinh nghiệm làm việc',
     tag: 'Slide 3',
     content: `
       <div class="presenter-slide-content">
-        <h2>3. Kinh nghiệm làm việc</h2>
+        <h2>3.1. Kinh nghiệm làm việc</h2>
+        <div style="margin-top: 20px; font-size: 0.95rem; line-height: 1.8; color: #213a55;">
+          <div style="background: #f0f6ff; padding: 16px; border-radius: 12px; margin-bottom: 14px; border-left: 4px solid #0070cc;">
+            <p style="margin: 0 0 10px; font-weight: 600; color: #0070cc;">📌 Vì sao phần Kinh nghiệm làm việc quan trọng?</p>
+            <p style="margin: 0;">Kinh nghiệm làm việc giúp nhà tuyển dụng đánh giá ứng viên đã từng làm những công việc gì, có những kỹ năng nào và có phù hợp với vị trí đang tuyển hay không. Nếu chưa có nhiều kinh nghiệm, ứng viên có thể trình bày công việc bán thời gian, thực tập, hoạt động tình nguyện hoặc các dự án liên quan.</p>
+          </div>
+          <div style="background: #fff9f0; padding: 16px; border-radius: 12px; margin-bottom: 14px; border-left: 4px solid #ff9d34;">
+            <p style="margin: 0 0 10px; font-weight: 600; color: #ff9d34;">⚡ Cách sắp xếp</p>
+            <p style="margin: 0;">Sắp xếp theo thứ tự thời gian từ công việc gần nhất đến cũ hơn. Mỗi mục nên bao gồm: tên công ty, vị trí, thời gian (tháng/năm), mô tả công việc bằng gạch đầu dòng và thành tích (ưu tiên số liệu).</p>
+          </div>
+        </div>
       </div>
     `
   },
   {
-    title: '4. Trình độ học vấn, bằng cấp',
+    title: '3.2. Những nội dung cần có',
     tag: 'Slide 4',
     content: `
       <div class="presenter-slide-content">
-        <h2>4. Trình độ học vấn</h2>
-        <h3 style="color: #0070cc; margin-top: 20px;">Bằng cấp & Chứng chỉ</h3>
-        
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; font-size: 0.95rem;">
-          <div>
+        <h2>3.2. Những nội dung cần có</h2>
+        <div style="margin-top: 20px; font-size: 0.95rem; line-height: 1.8; color: #213a55;">
+          <div style="background: #f0fff4; padding: 16px; border-radius: 12px; border-left: 4px solid #16a34a;">
+            <p style="margin: 0 0 10px; font-weight: 600; color: #16a34a;">✅ Những nội dung cần có</p>
+            <ul style="margin: 0; padding-left: 20px;">
+              <li>Tên công ty hoặc đơn vị làm việc</li>
+              <li>Vị trí đảm nhiệm</li>
+              <li>Thời gian làm việc (tháng/năm bắt đầu – tháng/năm kết thúc)</li>
+              <li>Mô tả công việc chính (dùng gạch đầu dòng, tập trung nhiệm vụ liên quan)</li>
+              <li>Thành tích / kết quả đạt được (dùng số liệu cụ thể nếu có)</li>
+            </ul>
+            <p style="margin-top:8px;">Dùng động từ hành động: tư vấn, quản lý, lập kế hoạch, hỗ trợ, triển khai, phân tích, phối hợp. Nhấn mạnh giá trị bạn tạo ra cho doanh nghiệp.</p>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  {
+    title: '3.3. Ví dụ kinh nghiệm làm việc',
+    tag: 'Slide 5',
+    content: `
+      <div class="presenter-slide-content">
+        <div style="display:flex; justify-content:center; align-items:center; margin-top:12px;">
+          <a href="Image/ChatGPT%20Image%2014_33_05%2012%20thg%207%2C%202026.png" target="_blank" rel="noopener" style="display:block; width:100%;">
+            <img src="Image/ChatGPT%20Image%2014_33_05%2012%20thg%207%2C%202026.png" alt="Ví dụ kinh nghiệm (ảnh)" style="display:block; width:100%; height:auto; max-height:calc(100vh - 220px); object-fit:contain; border-radius:12px; box-shadow:0 18px 40px rgba(0,0,0,0.14); background:#ffffff; padding:8px;"/>
+          </a>
+        </div>
+      </div>
+    `
+  },
+  {
+    title: '4.1. Bằng cấp, chứng chỉ, học vấn',
+    tag: 'Slide 5',
+    content: `
+      <div class="presenter-slide-content">
+        <h2>4.1. Bằng cấp, chứng chỉ, học vấn</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px; font-size: 0.95rem;">
+          <div style="background: #f7fbff; border: 1px solid #dcebf8; border-radius: 14px; padding: 18px;">
+            <h3 style="margin-bottom: 8px; font-size: 1.05rem; color: #0070cc;">Thông tin học vấn</h3>
             <p>✔ Tên trường</p>
             <p>✔ Chuyên ngành</p>
             <p>✔ Thời gian học</p>
             <p>✔ GPA / Xếp loại</p>
           </div>
-          <div>
+          <div style="background: #f7fbff; border: 1px solid #dcebf8; border-radius: 14px; padding: 18px;">
+            <h3 style="margin-bottom: 8px; font-size: 1.05rem; color: #0070cc;">Chứng chỉ & kỹ năng</h3>
             <p>✔ TOEIC / IELTS</p>
             <p>✔ MOS</p>
             <p>✔ Chứng chỉ chuyên môn</p>
             <p>✔ Khóa học liên quan</p>
           </div>
         </div>
-
-        <div style="margin-top: 30px; background: #f0f6ff; padding: 16px; border-radius: 8px; border-left: 4px solid #0052a3;">
-          <h4 style="color: #0052a3; margin-top: 0;">📚 Vai trò của trình độ học vấn 🎓</h4>
-          <ul style="margin: 10px 0; padding-left: 20px;">
-            <li>Thể hiện nền tảng kiến thức chuyên môn.</li>
-            <li>Giúp đánh giá mức độ phù hợp với vị trí ứng tuyển.</li>
-            <li>Quan trọng đối với sinh viên và người mới tốt nghiệp.</li>
-          </ul>
-        </div>
-
-        <div style="margin-top: 20px; background: #f0f6ff; padding: 16px; border-radius: 8px; border-left: 4px solid #0052a3;">
-          <h4 style="color: #0052a3; margin-top: 0;">🏆 Vai trò của bằng cấp & chứng chỉ 🏅</h4>
-          <ul style="margin: 10px 0; padding-left: 20px;">
-            <li>Chứng minh kỹ năng và năng lực.</li>
-            <li>Thể hiện tinh thần học hỏi.</li>
-            <li>Tăng lợi thế cạnh tranh khi ứng tuyển.</li>
-          </ul>
-        </div>
       </div>
     `
   },
   {
-    title: '5. Ví dụ minh họa',
+    title: '4.2. Vai trò',
     tag: 'Slide 5',
     content: `
       <div class="presenter-slide-content">
-        <h2> Ảnh minh họa CV</h2>
-        <div style="display: flex; justify-content: center; margin-top: 24px;">
-          <img src="Image/ChatGPT%20Image%2001_06_25%2012%20thg%207,%202026.png" alt="Hình ảnh minh họa CV" style="max-width: 100%; max-height: 460px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);" />
-        </div>
-        <p style="text-align: center; margin-top: 18px; color: #4a5f7f; font-size: 1rem;">Hình ảnh minh họa giúp người xem hình dung rõ hơn về bố cục trình bày của CV.</p>
-      </div>
-    `
-  },
-  {
-    title: '5. Kỹ năng trong CV',
-    tag: 'Slide 5',
-    content: `
-      <div class="presenter-slide-content">
-        <h2>5. Kỹ năng trong CV</h2>
-      </div>
-    `
-  },
-  {
-    title: '6.1. Phần thông tin cá nhân',
-    tag: 'Slide 6',
-    content: `
-      <div class="presenter-slide-content">
-        <h2>6.1. Phần thông tin cá nhân</h2>
-        <div style="margin-top: 20px; display: grid; gap: 12px; font-size: 0.95rem;">
-          <div style="background: #f0f6ff; padding: 14px; border-radius: 10px; border-left: 4px solid #0052a3;">
-            <p>✔ Trình bày đầy đủ thông tin cá nhân.</p>
-            <p>✔ Có ảnh chân dung chuyên nghiệp.</p>
-            <p>✔ Vị trí ứng tuyển rõ ràng.</p>
-            <p>✔ Email nghiêm túc và bố cục dễ nhìn.</p>
+        <h2>4.2. Vai trò</h2>
+        <div style="display: grid; gap: 16px; margin-top: 24px;">
+          <div style="background: #f0f6ff; padding: 16px; border-radius: 12px; border-left: 4px solid #0052a3;">
+            <h3 style="margin: 0 0 8px; color: #0052a3;">📚 Vai trò của trình độ học vấn 🎓</h3>
+            <ul style="margin: 0; padding-left: 20px; color: #213a55; line-height: 1.6;">
+              <li>Thể hiện nền tảng kiến thức chuyên môn.</li>
+              <li>Giúp đánh giá mức độ phù hợp với vị trí ứng tuyển.</li>
+              <li>Quan trọng đối với sinh viên và người mới tốt nghiệp.</li>
+            </ul>
+          </div>
+          <div style="background: #f0f6ff; padding: 16px; border-radius: 12px; border-left: 4px solid #0052a3;">
+            <h3 style="margin: 0 0 8px; color: #0052a3;">🏆 Vai trò của bằng cấp & chứng chỉ 🏅</h3>
+            <ul style="margin: 0; padding-left: 20px; color: #213a55; line-height: 1.6;">
+              <li>Chứng minh kỹ năng và năng lực.</li>
+              <li>Thể hiện tinh thần học hỏi.</li>
+              <li>Tăng lợi thế cạnh tranh khi ứng tuyển.</li>
+            </ul>
           </div>
         </div>
       </div>
     `
   },
   {
-    title: '6.2. Mục tiêu nghề nghiệp',
-    tag: 'Slide 6',
+    title: 'Ảnh minh họa',
+    tag: 'Slide 7',
     content: `
       <div class="presenter-slide-content">
-        <h2>6.2. Mục tiêu nghề nghiệp</h2>
-        <div style="margin-top: 20px; background: #f7fbff; padding: 16px; border-radius: 10px; border-left: 4px solid #0070cc;">
-          <ul style="margin: 0 0 0 20px; padding: 0;">
-            <li>Mục tiêu nghề nghiệp ngắn gọn, không lan man.</li>
-            <li>Phản ánh năng lực cá nhân một cách rõ ràng.</li>
-            <li>Có mục tiêu ngắn hạn và dài hạn.</li>
+        <h2>Ảnh minh họa</h2>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 24px;">
+          <img src="Image/ChatGPT%20Image%2001_06_25%2012%20thg%207,%202026.png" alt="Ảnh minh họa ChatGPT" style="max-width: 100%; max-height: 420px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);" />
+        </div>
+      </div>
+    `
+  },
+  {
+    title: '5. Tại sao phần "Kỹ năng" lại quan trọng?',
+    tag: 'Slide 8',
+    content: `
+      <div class="presenter-slide-content">
+        <h2>5. Tại sao phần "Kỹ năng" lại quan trọng?</h2>
+        <div style="display: grid; gap: 16px; margin-top: 24px;">
+          <div style="background: #f0f6ff; padding: 18px; border-radius: 12px; border-left: 5px solid #0070cc;">
+            <h3 style="margin: 0 0 8px; color: #0070cc; font-size: 1.05rem;">📋 Điểm chạm đầu tiên</h3>
+            <p style="margin: 0; color: #213a55; line-height: 1.6;">Nhà tuyển dụng thường quét nhanh (scan) phần kỹ năng để xem bạn có "khớp" với JD (Mô tả công việc) hay không.</p>
+          </div>
+          <div style="background: #f0f6ff; padding: 18px; border-radius: 12px; border-left: 5px solid #0070cc;">
+            <h3 style="margin: 0 0 8px; color: #0070cc; font-size: 1.05rem;">⚡ Tóm tắt năng lực</h3>
+            <p style="margin: 0; color: #213a55; line-height: 1.6;">Giúp người xem nắm bắt nhanh những gì bạn làm được mà không cần đọc hết kinh nghiệm làm việc.</p>
+          </div>
+          <div style="background: #f0f6ff; padding: 18px; border-radius: 12px; border-left: 5px solid #0070cc;">
+            <h3 style="margin: 0 0 8px; color: #0070cc; font-size: 1.05rem;">🎯 Tối ưu hóa ATS</h3>
+            <p style="margin: 0; color: #213a55; line-height: 1.6;">Là "mỏ vàng" để chứa các từ khóa (Keywords) giúp vượt qua hệ thống sàng lọc tự động (ATS).</p>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  {
+    title: '5.1. Phân loại Kỹ năng (Bộ khung chuẩn)',
+    tag: 'Slide 9',
+    content: `
+      <div class="presenter-slide-content">
+        <h2>5.1. Phân loại Kỹ năng (Bộ khung chuẩn)</h2>
+        <div style="display: grid; gap: 14px; margin-top: 24px;">
+          <div style="background: #f5faff; padding: 16px; border-radius: 12px; border-left: 4px solid #0052a3;">
+            <h3 style="margin: 0 0 6px; color: #0052a3; font-size: 1rem;">💻 Hard Skills (Kỹ năng cứng)</h3>
+            <p style="margin: 0; color: #213a55; font-size: 0.95rem;">Kiến thức chuyên môn, công cụ, ngôn ngữ (Ví dụ: Java, SQL, Thiết kế đồ họa, Kế toán).</p>
+          </div>
+          <div style="background: #f5faff; padding: 16px; border-radius: 12px; border-left: 4px solid #0052a3;">
+            <h3 style="margin: 0 0 6px; color: #0052a3; font-size: 1rem;">🤝 Soft Skills (Kỹ năng mềm)</h3>
+            <p style="margin: 0; color: #213a55; font-size: 0.95rem;">Cách bạn tương tác và xử lý vấn đề (Ví dụ: Giao tiếp, Quản lý thời gian, Làm việc nhóm).</p>
+          </div>
+          <div style="background: #f5faff; padding: 16px; border-radius: 12px; border-left: 4px solid #0052a3;">
+            <h3 style="margin: 0 0 6px; color: #0052a3; font-size: 1rem;">🔄 Transferable Skills (Kỹ năng chuyển đổi)</h3>
+            <p style="margin: 0; color: #213a55; font-size: 0.95rem;">Những kỹ năng dùng được ở nhiều môi trường khác nhau (Ví dụ: Giải quyết vấn đề, Khả năng lãnh đạo).</p>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  {
+    title: '5.2. Quy tắc "Vàng" & Những lỗi thường gặp',
+    tag: 'Slide 10',
+    content: `
+      <div class="presenter-slide-content">
+        <h2>5.2. Quy tắc "Vàng" & Những lỗi thường gặp</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; font-size: 0.93rem; margin-bottom: 20px;">
+          <div style="background: #f0f8ff; padding: 16px; border-radius: 12px; border: 1px solid #bfe0ff;">
+            <h3 style="margin: 0 0 12px; color: #0070cc; font-size: 1rem;">✅ Quy tắc "Vàng"</h3>
+            <ul style="margin: 0; padding-left: 18px; color: #213a55; line-height: 1.7;">
+              <li>Đừng liệt kê tràn lan - chỉ chọn những kỹ năng liên quan.</li>
+              <li>Định lượng khi có thể: "3 năm kinh nghiệm Java" thay vì "Thành thạo Java".</li>
+              <li>Sử dụng thang đo hợp lý: Người mới, Có kinh nghiệm, Thành thạo, Chuyên gia.</li>
+            </ul>
+          </div>
+          <div style="background: #fff5f5; padding: 16px; border-radius: 12px; border: 1px solid #ffcccc;">
+            <h3 style="margin: 0 0 12px; color: #dc2626; font-size: 1rem;">❌ Lỗi thường gặp</h3>
+            <ul style="margin: 0; padding-left: 18px; color: #213a55; line-height: 1.7;">
+              <li>Quá chung chung: "Chăm chỉ" → hành động cụ thể.</li>
+              <li>Liệt kê quá nhiều: làm loãng hồ sơ.</li>
+              <li>Sai chính tả: đặc biệt tên phần mềm, ngôn ngữ lập trình.</li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+    `
+  },
+  {
+    title: '5.3. Ví dụ theo nghề',
+    tag: 'Slide 11',
+    content: `
+      <div class="presenter-slide-content">
+        <div style="display:flex; justify-content:center; align-items:center; margin-top:20px;">
+          <img src="Image/ChatGPT%20Image%2014_27_06%2012%20thg%207%2C%202026.png" alt="Ví dụ theo nghề" style="max-width:100%; max-height:460px; border-radius:12px; box-shadow:0 12px 30px rgba(0,0,0,0.12);"/>
+        </div>
+      </div>
+    `
+  },
+  {
+    title: '6.1. CV mẫu hoàn chỉnh',
+    tag: 'Slide 11',
+    content: `
+      <div class="presenter-slide-content">
+        <h2>6.1. CV mẫu hoàn chỉnh</h2>
+        <div style="display: flex; justify-content: center; gap: 18px; margin-top: 24px; flex-wrap: wrap;">
+          <img src="Image/Cv.jpg" alt="CV mẫu hoàn chỉnh" style="max-width: 100%; max-height: 420px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);" />
+          <img src="Image/cv-badge.svg" alt="Biểu tượng CV" style="max-width: 120px; align-self: center;" />
+        </div>
+      </div>
+    `
+  },
+  {
+    title: '6.2. Bài học rút ra khi viết CV',
+    tag: 'Slide 12',
+    content: `
+      <div class="presenter-slide-content">
+        <h2>6.2. Bài học rút ra khi viết CV</h2>
+        <div style="margin-top: 24px; background: #f5faff; padding: 20px; border-radius: 14px; border-left: 5px solid #0070cc; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);">
+          <ul style="margin: 0; padding-left: 20px; line-height: 1.8; color: #213a55; font-size: 1rem;">
+            <li>Trình bày đẹp, dễ đọc.</li>
+            <li>Lựa chọn ảnh lịch sự, chuyên nghiệp.</li>
+            <li>Ngắn gọn (1–2 trang A4).</li>
+            <li>Không sai chính tả.</li>
+            <li>Thông tin trung thực.</li>
+            <li>Nhấn mạnh thành tích bằng số liệu.</li>
+            <li>Phù hợp với vị trí ứng tuyển.</li>
+            <li>Cập nhật thường xuyên khi có kinh nghiệm mới.</li>
           </ul>
-        </div>
-      </div>
-    `
-  },
-  {
-    title: '6.3. Trình độ và bằng cấp',
-    tag: 'Slide 6',
-    content: `
-      <div class="presenter-slide-content">
-        <h2>6.3. Trình độ và bằng cấp</h2>
-        <div style="margin-top: 20px; display: grid; gap: 12px; font-size: 0.95rem;">
-          <div style="background: #f0f6ff; padding: 14px; border-radius: 10px; border-left: 4px solid #0052a3;">
-            <p>✔ CV trình bày rất hợp lý, có đầy đủ các thông tin gồm:</p>
-          </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-            <div style="background: #f0f6ff; padding: 14px; border-radius: 10px;">
-              <p>✔ Tên trường đại học</p>
-              <p>✔ Chuyên ngành</p>
-              <p>✔ GPA / xếp loại</p>
-            </div>
-            <div style="background: #f7fbff; padding: 14px; border-radius: 10px;">
-              <p>✔ Chứng chỉ TOEIC</p>
-              <p>✔ Chứng chỉ chuyên môn</p>
-              <p>✔ Khóa học liên quan</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    `
-  },
-  {
-    title: '6.4. Kinh nghiệm làm việc',
-    tag: 'Slide 6',
-    content: `
-      <div class="presenter-slide-content">
-        <h2>6.4. Kinh nghiệm làm việc</h2>
-        <div style="margin-top: 20px; background: #f0f6ff; padding: 16px; border-radius: 10px; border-left: 4px solid #0052a3;">
-          <ul style="margin: 0 0 0 20px; padding: 0;">
-            <li>Nêu rõ chức danh và công ty.</li>
-            <li>Mô tả công việc kèm số liệu và thành tựu cụ thể.</li>
-            <li>Giúp tăng độ tin cậy cho CV.</li>
-          </ul>
-        </div>
-      </div>
-    `
-  },
-  {
-    title: '6.5. Trình bày kĩ năng',
-    tag: 'Slide 6',
-    content: `
-      <div class="presenter-slide-content">
-        <h2>6.5. Trình bày kĩ năng</h2>
-        <div style="margin-top: 20px; background: #f7fbff; padding: 16px; border-radius: 10px; border-left: 4px solid #0070cc;">
-          <ul style="margin: 0 0 0 20px; padding: 0;">
-            <p>✔ Trình bày một cách khoa học:</p>
-            <li>Kỹ năng chuyên môn.</li>
-            <li>Kỹ năng mềm.</li>
-            <li>Kỹ năng sử dụng công cụ.</li>
-          </ul>
-        </div>
-      </div>
-    `
-  },
-  {
-    title: '6.6. Bài học rút ra',
-    tag: 'Slide 6',
-    content: `
-      <div class="presenter-slide-content">
-        <h2>6.6. Bài học rút ra khi viết CV</h2>
-        <div style="margin-top: 20px; display: grid; gap: 10px; font-size: 0.95rem;">
-          <div style="background: #f0f6ff; padding: 14px; border-radius: 10px; border-left: 4px solid #0052a3;">
-            <p>✔ Trình bày đẹp, dễ đọc và ngắn gọn.</p>
-            <p>✔ Chọn ảnh lịch sự, chuyên nghiệp.</p>
-            <p>✔ Không sai chính tả và giữ thông tin trung thực.</p>
-          </div>
-          <div style="background: #f7fbff; padding: 14px; border-radius: 10px; border-left: 4px solid #0070cc;">
-            <p>✔ Nhấn mạnh thành tích bằng số liệu.</p>
-            <p>✔ Phù hợp với vị trí ứng tuyển.</p>
-            <p>✔ Cập nhật thường xuyên.</p>
-          </div>
         </div>
       </div>
     `
   },
   {
     title: '7. Tổng kết',
-    tag: 'Slide 7',
+    tag: 'Slide 13',
     content: `
       <div class="presenter-slide-content">
         <h2>7. Tổng kết</h2>
@@ -219,11 +277,11 @@ const slides = [
     `
   },
   {
-    title: '8. Câu hỏi ôn tập trắc nghiệm 1',
-    tag: 'Slide 8',
+    title: 'Câu hỏi ôn tập trắc nghiệm 1',
+    tag: 'Slide 14',
     content: `
       <div class="presenter-slide-content">
-        <h2>8. Câu hỏi ôn tập trắc nghiệm 1</h2>
+        <h2>Câu hỏi ôn tập trắc nghiệm 1</h2>
         <div class="quiz-wrap">
           <div class="quiz-question" data-correct-text="B. Viết ngắn gọn, phù hợp với vị trí ứng tuyển.">
             <div class="quiz-question-title">Câu 1. Mục tiêu nghề nghiệp trong CV nên viết như thế nào?</div>
@@ -241,11 +299,11 @@ const slides = [
     `
   },
   {
-    title: '9. Câu hỏi ôn tập trắc nghiệm 2',
-    tag: 'Slide 9',
+    title: 'Câu hỏi ôn tập trắc nghiệm 2',
+    tag: 'Slide 15',
     content: `
       <div class="presenter-slide-content">
-        <h2>9. Câu hỏi ôn tập trắc nghiệm 2</h2>
+        <h2>Câu hỏi ôn tập trắc nghiệm 2</h2>
         <div class="quiz-wrap">
           <div class="quiz-question" data-correct-text="B. Thành tích và kết quả đạt được.">
             <div class="quiz-question-title">Câu 2. Khi trình bày kinh nghiệm làm việc, nội dung nào quan trọng nhất?</div>
@@ -263,11 +321,11 @@ const slides = [
     `
   },
   {
-    title: '10. Câu hỏi ôn tập trắc nghiệm 3',
-    tag: 'Slide 10',
+    title: 'Câu hỏi ôn tập trắc nghiệm 3',
+    tag: 'Slide 16',
     content: `
       <div class="presenter-slide-content">
-        <h2>10. Câu hỏi ôn tập trắc nghiệm 3</h2>
+        <h2>Câu hỏi ôn tập trắc nghiệm 3</h2>
         <div class="quiz-wrap">
           <div class="quiz-question" data-correct-text="A. Hoạt động câu lạc bộ, tình nguyện và dự án học tập.">
             <div class="quiz-question-title">Câu 3. Sinh viên chưa có kinh nghiệm làm việc có thể ghi nội dung nào trong CV?</div>
@@ -285,11 +343,11 @@ const slides = [
     `
   },
   {
-    title: '11. Câu hỏi ôn tập trắc nghiệm 4',
-    tag: 'Slide 11',
+    title: 'Câu hỏi ôn tập trắc nghiệm 4',
+    tag: 'Slide 17',
     content: `
       <div class="presenter-slide-content">
-        <h2>11. Câu hỏi ôn tập trắc nghiệm 4</h2>
+        <h2>Câu hỏi ôn tập trắc nghiệm 4</h2>
         <div class="quiz-wrap">
           <div class="quiz-question" data-correct-text="C. Giao tiếp và làm việc nhóm.">
             <div class="quiz-question-title">Câu 4. Kỹ năng nào sau đây thuộc nhóm kỹ năng mềm?</div>
@@ -307,11 +365,11 @@ const slides = [
     `
   },
   {
-    title: '12. Câu hỏi ôn tập trắc nghiệm 5',
-    tag: 'Slide 12',
+    title: '16. Câu hỏi ôn tập trắc nghiệm 5',
+    tag: 'Slide 18',
     content: `
       <div class="presenter-slide-content">
-        <h2>12. Câu hỏi ôn tập trắc nghiệm 5</h2>
+        <h2>16. Câu hỏi ôn tập trắc nghiệm 5</h2>
         <div class="quiz-wrap">
           <div class="quiz-question" data-correct-text="B. Trình bày ngắn gọn, rõ ràng, trung thực và phù hợp với vị trí ứng tuyển.">
             <div class="quiz-question-title">Câu 5. Một CV chuyên nghiệp nên có đặc điểm nào sau đây?</div>
@@ -343,13 +401,94 @@ const previewChip = document.getElementById('previewChip');
 const previewStage = document.getElementById('previewStage');
 const previewPanel = document.getElementById('previewPanel');
 const fullscreenBtn = document.getElementById('fullscreenBtn');
+const decorCanvas = document.getElementById('decorCanvas');
+const presenterDecorCanvas = document.getElementById('presenterDecorCanvas');
+
+function setupDecorCanvas(canvas) {
+  if (!canvas) return;
+
+  const ctx = canvas.getContext('2d');
+  let width = 0;
+  let height = 0;
+  let particles = [];
+
+  const resizeCanvas = () => {
+    const rect = canvas.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    width = rect.width;
+    height = rect.height;
+    canvas.width = Math.round(width * dpr);
+    canvas.height = Math.round(height * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    particles = Array.from({ length: Math.min(18, Math.max(8, Math.floor(width / 120))) }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      radius: Math.random() * 2.4 + 1,
+      vx: (Math.random() - 0.5) * 0.25,
+      vy: (Math.random() - 0.5) * 0.25,
+      alpha: Math.random() * 0.2 + 0.08
+    }));
+  };
+
+  const draw = () => {
+    ctx.clearRect(0, 0, width, height);
+
+    const gradient = ctx.createLinearGradient(0, 0, width, height);
+    gradient.addColorStop(1, 'rgba(0, 82, 163, 0.08)');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, width, height);
+
+    particles.forEach((particle) => {
+      particle.x += particle.vx;
+      particle.y += particle.vy;
+
+      if (particle.x < -20 || particle.x > width + 20) particle.vx *= -1;
+      if (particle.y < -20 || particle.y > height + 20) particle.vy *= -1;
+
+      ctx.beginPath();
+      ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(0, 112, 204, ${particle.alpha})`;
+      ctx.fill();
+    });
+
+    for (let i = 0; i < particles.length; i += 1) {
+      for (let j = i + 1; j < particles.length; j += 1) {
+        const a = particles[i];
+        const b = particles[j];
+        const dx = a.x - b.x;
+        const dy = a.y - b.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < 140) {
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.strokeStyle = `rgba(0, 82, 163, ${0.04 * (1 - distance / 140)})`;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+      }
+    }
+
+    requestAnimationFrame(draw);
+  };
+
+  resizeCanvas();
+  draw();
+  window.addEventListener('resize', resizeCanvas);
+}
+
+setupDecorCanvas(decorCanvas);
+setupDecorCanvas(presenterDecorCanvas);
 
 let currentIndex = 0;
 
 function renderSlide(index) {
   currentIndex = (index + slides.length) % slides.length;
-  stage.innerHTML = slides[currentIndex].content;
-  previewStage.innerHTML = slides[currentIndex].content;
+  const content = slides[currentIndex].content.replace('presenter-slide-content', 'presenter-slide-content slide-enter');
+  stage.innerHTML = content;
+  previewStage.innerHTML = content;
   counter.textContent = `${currentIndex + 1} / ${slides.length}`;
   chip.textContent = `Slide ${currentIndex + 1} / ${slides.length}`;
   previewChip.textContent = `Slide ${currentIndex + 1} / ${slides.length}`;
@@ -426,8 +565,8 @@ function closePresenter() {
   }
 }
 
-thumbItems.forEach((item) => {
-  item.addEventListener('click', () => renderSlide(Number(item.dataset.slideIndex)));
+thumbItems.forEach((item, itemIndex) => {
+  item.addEventListener('click', () => renderSlide(itemIndex));
 });
 
 previewPanel.addEventListener('click', () => openPresenter(currentIndex, true));
@@ -443,8 +582,8 @@ fullscreenBtn.addEventListener('click', (event) => {
   openPresenter(currentIndex, true);
 });
 
-navDots.forEach((dot) => {
-  dot.addEventListener('click', () => renderSlide(Number(dot.dataset.index)));
+navDots.forEach((dot, dotIndex) => {
+  dot.addEventListener('click', () => renderSlide(dotIndex));
 });
 
 closeBtn.addEventListener('click', closePresenter);
