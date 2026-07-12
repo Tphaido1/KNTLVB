@@ -208,25 +208,32 @@ const slides = [
     `
   },
 {
-    title: 'Bằng cấp, chứng chỉ, học vấn',
+    title: 'Trình độ học vấn, bằng cấp',
     tag: 'Slide 8',
     content: `
       <div class="presenter-slide-content">
-        <h2>Bằng cấp, chứng chỉ, học vấn</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px; font-size: 0.95rem;">
-          <div style="background: #f7fbff; border: 1px solid #dcebf8; border-radius: 14px; padding: 18px;">
-            <h3 style="margin-bottom: 8px; font-size: 1.05rem; color: #0070cc;">Thông tin học vấn</h3>
-            <p>✔ Tên trường</p>
-            <p>✔ Chuyên ngành</p>
-            <p>✔ Thời gian học</p>
-            <p>✔ GPA / Xếp loại</p>
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 24px;">
+          <h2 style="margin: 0; font-size: 2.2rem; color: #1f314a;">Trình độ học vấn, bằng cấp</h2>
+          <div style="flex: 1; height: 48px; background: #ffd800; border-radius: 12px;"></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px;">
+          <div style="background: #e8eef5; border-radius: 14px; padding: 24px;">
+            <h3 style="margin: 0 0 16px 0; font-size: 1.15rem; font-weight: 700; color: #ffffff; background: #ffd800; padding: 8px 12px; display: inline-block; border-radius: 6px;">Trình độ học vấn</h3>
+            <ul style="margin: 16px 0 0 0; padding-left: 20px; color: #1f3552; line-height: 1.8; font-size: 0.95rem;">
+              <li>Tên trường</li>
+              <li>Chuyên ngành</li>
+              <li>Thời gian học, bao gồm năm bắt đầu và năm kết thúc ( hoặc năm tốt nghiệp dự kiến )</li>
+              <li>GPA ( nếu cao )</li>
+              <li>Danh hiệu và giải thưởng trong quá trình học tập (nếu có)</li>
+            </ul>
           </div>
-          <div style="background: #f7fbff; border: 1px solid #dcebf8; border-radius: 14px; padding: 18px;">
-            <h3 style="margin-bottom: 8px; font-size: 1.05rem; color: #0070cc;">Chứng chỉ & kỹ năng</h3>
-            <p>✔ TOEIC / IELTS</p>
-            <p>✔ MOS</p>
-            <p>✔ Chứng chỉ chuyên môn</p>
-            <p>✔ Khóa học liên quan</p>
+          <div style="background: #e8eef5; border-radius: 14px; padding: 24px;">
+            <h3 style="margin: 0 0 16px 0; font-size: 1.15rem; font-weight: 700; color: #ffffff; background: #ffd800; padding: 8px 12px; display: inline-block; border-radius: 6px;">Bằng cấp/ Chứng chỉ</h3>
+            <ul style="margin: 16px 0 0 0; padding-left: 20px; color: #1f3552; line-height: 1.8; font-size: 0.95rem;">
+              <li>Tên chứng chỉ: Ban ghi dây dù và chính xác tên chứng chỉ mà bạn đang sở hữu.</li>
+              <li>Tổ chức cấp chứng chỉ: Ghi rõ tên tổ chức cấp chứng chỉ.</li>
+              <li>Thời gian cấp chứng chỉ</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -432,9 +439,7 @@ const slides = [
       <div class="presenter-slide-content">
         <h2>Tổng kết</h2>
         <div style="margin-top: 18px; background: #f7fbff; padding: 16px; border-radius: 12px; border-left: 4px solid #0070cc; font-size: 0.95rem; line-height: 1.7;">
-          <p>Qua nội dung trình bày, nhóm nhận thấy rằng CV là "tấm vé đầu tiên" giúp ứng viên tiếp cận nhà tuyển dụng. Một CV hiệu quả không chỉ trình bày đầy đủ thông tin mà còn phải thể hiện rõ mục tiêu nghề nghiệp, kinh nghiệm làm việc, trình độ học vấn và các kỹ năng phù hợp với vị trí ứng tuyển.</p>
-          <p>Đối với sinh viên, dù chưa có nhiều kinh nghiệm, vẫn có thể tạo ấn tượng bằng các dự án học tập, hoạt động ngoại khóa, chứng chỉ và kỹ năng chuyên môn. Bên cạnh đó, cần trình bày CV ngắn gọn, rõ ràng, trung thực và sử dụng số liệu cụ thể để chứng minh năng lực.</p>
-          <p>Việc đầu tư xây dựng một CV chất lượng sẽ giúp tăng khả năng vượt qua vòng sàng lọc hồ sơ và mở ra nhiều cơ hội nghề nghiệp trong tương lai.</p>
+          <p>CV là "tấm vé đầu tiên" giúp ứng viên tiếp cận nhà tuyển dụng. Một CV hiệu quả không chỉ trình bày đầy đủ thông tin mà còn phải thể hiện rõ mục tiêu nghề nghiệp, kinh nghiệm làm việc, trình độ học vấn và các kỹ năng phù hợp với vị trí ứng tuyển.</p>
         </div>
       </div>
     `
